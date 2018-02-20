@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Tinder</string>
+    <string name="image_alt">Tinder Logo</string>
+
+    <string name="title_activity_tabbed">Tinder</string>
+
+    <string name="login_normal">Login</string>
+    <string name="login_facebook">Login with Facebook</string>
+    <string name="title_activity_tab">TabActivity</string>
+
+
+    <!--
+    <string name=""></string>
+    <string name=""></string>
+    <string name=""></string>
+    <string name=""></string>
+    <string name=""></string>
+    <string name=""></string>
+    <string name=""></string>
+    <string name=""></string>
+    <string name=""></string>
+    <string name=""></string>
+    <string name=""></string>
+    <string name=""></string>
+    <string name=""></string>
+    <string name=""></string>
+    <string name=""></string>
+    <string name=""></string>
+    <string name=""></string>
+    <string name=""></string>
+    <string name=""></string>
+    <string name=""></string>
+    -->
+
+</resources>

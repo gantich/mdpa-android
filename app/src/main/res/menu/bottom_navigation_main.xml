@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_discovery"
+        android:enabled="true"
+        android:icon="@drawable/ic_people_discovery"
+        android:title="Discovery"
+        android:checked="true"/>
+    <item
+        android:id="@+id/action_messaging"
+        android:enabled="true"
+        android:icon="@drawable/ic_messaging"
+        android:title="Messaging" />
+    <item
+        android:id="@+id/action_settings"
+        android:enabled="true"
+        android:icon="@drawable/ic_settings"
+        android:title="Settings" />
+</menu>
