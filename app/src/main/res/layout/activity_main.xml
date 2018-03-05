@@ -11,23 +11,55 @@
     <ImageView
         android:id="@+id/imageView2"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="50"
+        android:layout_height="256dp"
         android:contentDescription="@string/image_alt"
         android:src="@drawable/ti_logo" />
+
+    <EditText
+        android:id="@+id/login_normal_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:visibility="gone" />
+
+    <EditText
+        android:id="@+id/login_normal_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:singleLine="false"
+        android:visibility="gone" />
 
     <Button
         android:id="@+id/login_normal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:text="@string/login_normal" />
+        android:text="@string/login_email" />
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/login"
+        android:visibility="gone" />
 
     <Button
         android:id="@+id/login_facebook"
+        style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="1"
+        android:backgroundTint="@color/colorPrimaryDark"
         android:text="@string/login_facebook" />
+
+    <Button
+        android:id="@+id/register"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/register" />
 
 </LinearLayout>

@@ -3,13 +3,70 @@
     <string name="image_alt">Tinder Logo</string>
 
     <string name="title_activity_tabbed">Tinder</string>
+    <string name="title_activity_edit_profile">Edit Profile</string>
 
-    <string name="login_normal">Login</string>
+    <string name="login_email">Login with email</string>
     <string name="login_facebook">Login with Facebook</string>
-    <string name="title_activity_tab">TabActivity</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
 
 
-    <!--
+    <string name="preferences_title_profile">Profile</string>
+    <string name="preferences_title_discovery">People Discovery</string>
+    <string name="preferences_title_notifications">Notifications</string>
+    <string name="preferences_title_legal">Legal</string>
+    <string name="preferences_title_other">Other</string>
+
+    <string name="preferences_item_edit_profile">Edit Profile</string>
+    <string name="preferences_item_edit_profile_summary">Hugh Jass, 23</string>
+
+    <string name="preferences_item_discovery_location">Location</string>
+    <string name="preferences_item_discovery_location_summary">Barcelona, Spain</string>
+    <string name="preferences_item_discovery_distance">Distance</string>
+    <string name="preferences_item_discovery_gender">Gender</string>
+    <string name="preferences_item_discovery_gender_male">Male</string>
+    <string name="preferences_item_discovery_gender_female">Female</string>
+    <string name="preferences_item_discovery_age_range">Age range</string>
+    <string name="preferences_item_discovery_age_range_summary">From 18 to 65</string>
+    <string name="preferences_item_discovery_visibility">Visibility</string>
+    <string name="preferences_item_discovery_visibility_summary">Other users can see your profile</string>
+
+    <string name="preferences_item_notifications_new_match_title">New match</string>
+    <string name="preferences_item_notifications_new_match_summary">You will get notified when a match happens</string>
+    <string name="preferences_item_notifications_vibration">Vibration</string>
+    <string name="preferences_item_notifications_vibration_summary">Vibration on new updates</string>
+    <string name="preferences_item_notifications_inapp_sounds">Sounds</string>
+    <string name="preferences_item_notifications_inapp_sounds_summary">Sounds will be played on notifications</string>
+
+
+    <string name="preferences_item_legal_privacy_polocy">Privacy policy</string>
+    <string name="preferences_item_legal_terms_and_conditions">Terms and conditions</string>
+
+    <string name="preferences_item_other_share_app">Share app</string>
+    <string name="preferences_item_other_logout">Logout</string>
+    <string name="preferences_item_other_delete_account">Delete account</string>
+    <string name="preferences_item_other_version">Version number</string>
+    <string name="preferences_item_other_version_summary">V 0.0.1</string>
+
+    <string name="edit_profile_title_images">Images</string>
+    <string name="edit_profile_title_description">Description</string>
+    <string name="edit_profile_title_job">Actual job</string>
+    <string name="edit_profile_title_sex">Sex</string>
+    <string name="edit_profile_title_school">School</string>
+    <string name="edit_profile_title_song">Favourite song</string>
+
+    <string name="edit_profile_hint_description">A brief description of you</string>
+    <string name="edit_profile_hint_job">Place you are working now</string>
+    <string name="edit_profile_option_sex_male">Male</string>
+    <string name="edit_profile_option_sex_female">Female</string>
+    <string name="edit_profile_hint_school">School where you studied</string>
+    <string name="edit_profile_hint_song">Your favourite song</string>
+    <string name="edit_profile_saved">Settings saved</string>
+    <string name="edit_profile_not_saved">Settings couldn\'t be saved</string>
+
+    <string name="not_available_yet">Not available yet</string>
+
+    hint <!--
     <string name=""></string>
     <string name=""></string>
     <string name=""></string>

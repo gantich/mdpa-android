@@ -6,44 +6,42 @@ package com.mdpa.guillermoantich.tinder.model;
 
 public class User {
 
-    public String id;
-    public String name;
-    public String lastname;
-    public int age;
-    public enum gender {
-        MALE,
-        FEMALE,
-        UNDEFINED;
+    public enum Gender {
+        MALE,FEMALE,UNDEFINED;
     }
-    public String[] images;
-    public String description;
-    public String job;
-    public String studies;
-    public String song;
-    public enum preference {
-        MALE,
-        FEMALE,
-        UNDEFINED;
-    }
-    public double latitude;
-    public double longitude;
-    public int distance_min;
-    public int distance_max;
-    public int range_min;
-    public int range_max;
-    public boolean visibility;
+
+    private String id;
+    private String name;
+    private String lastname;
+    private int age;
+    private Gender gender;
+    private String[] images;
+    private String description;
+    private String job;
+    private String studies;
+    private String song;
+    private Gender preference;
+    private double latitude;
+    private double longitude;
+    private int distance_min;
+    private int distance_max;
+    private int range_min;
+    private int range_max;
+    private boolean visibility;
 
 
-    public User(String id, String name, String lastname, int age, String[] images, String description, String job, String studies, String song, double latitude, double longitude, int distance_min, int distance_max, int range_min, int range_max, boolean visibility) {
+    public User(String id, String name, String lastname, int age, Gender gender, String[] images, String description, String job, String studies, String song, Gender preference, double latitude, double longitude, int distance_min, int distance_max, int range_min, int range_max, boolean visibility) {
         this.id = id;
         this.name = name;
         this.lastname = lastname;
         this.age = age;
+        this.gender = gender;
         this.images = images;
         this.description = description;
         this.job = job;
         this.studies = studies;
         this.song = song;
+        this.preference = preference;
         this.latitude = latitude;
         this.longitude = longitude;
         this.distance_min = distance_min;
@@ -52,6 +50,8 @@ public class User {
         this.range_max = range_max;
         this.visibility = visibility;
     }
+
+    public User() {}
 
     public String getId() {
         return id;
@@ -83,6 +83,14 @@ public class User {
 
     public void setAge(int age) {
         this.age = age;
+    }
+
+    public Gender getGender() {
+        return gender;
+    }
+
+    public void setGender(Gender gender) {
+        this.gender = gender;
     }
 
     public String[] getImages() {
@@ -123,6 +131,14 @@ public class User {
 
     public void setSong(String song) {
         this.song = song;
+    }
+
+    public Gender getPreference() {
+        return preference;
+    }
+
+    public void setPreference(Gender preference) {
+        this.preference = preference;
     }
 
     public double getLatitude() {

@@ -6,20 +6,16 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.Toolbar;
-import android.view.Menu;
 import android.view.MenuItem;
-import android.widget.Toast;
 
 import com.mdpa.guillermoantich.tinder.R;
 
-public class TabbedActivity extends AppCompatActivity implements BottomNavigationView.OnNavigationItemSelectedListener{
+public class TabbedActivity extends BaseActivity implements BottomNavigationView.OnNavigationItemSelectedListener{
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tabbed);
-
 
         BottomNavigationView bottomNavigationView = (BottomNavigationView) findViewById(R.id.bottom_navigation);
         bottomNavigationView.setOnNavigationItemSelectedListener(this);
@@ -34,13 +30,16 @@ public class TabbedActivity extends AppCompatActivity implements BottomNavigatio
         {
             case R.id.action_discovery:
                 fragment = PeopleDiscoveryFragment.newInstance();
+                setViewPagerPosition(0);
                 break;
 
             case R.id.action_messaging:
                 fragment = MessagingFragment.newInstance();
+                setViewPagerPosition(1);
                 break;
             case R.id.action_settings:
                 fragment = SettingsFragment.newInstance();
+                setViewPagerPosition(2);
                 break;
         }
 
@@ -55,7 +54,18 @@ public class TabbedActivity extends AppCompatActivity implements BottomNavigatio
 
     private void initFragmentManager() {
         FragmentManager fragmentManager = getSupportFragmentManager();
-        PeopleDiscoveryFragment fragment = PeopleDiscoveryFragment.newInstance();
+        Fragment fragment = null;
+        switch (getViewPagerPosition()){
+            case 0:
+                fragment = PeopleDiscoveryFragment.newInstance();
+                break;
+            case 1:
+                fragment = MessagingFragment.newInstance();
+                break;
+            case 2:
+                fragment = SettingsFragment.newInstance();
+                break;
+        }
         fragmentManager.beginTransaction().replace(R.id.fragment_container, fragment).commit();
     }
 }

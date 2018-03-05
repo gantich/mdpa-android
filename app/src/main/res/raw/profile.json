@@ -1,0 +1,27 @@
+{
+  "id":"q1r113134t",
+  "name":"Huge",
+  "lastname":"Jass",
+  "age":31,
+  "gender":"MALE",
+  "images":[
+    "http://google.es",
+    "http://google.es",
+    "http://google.es",
+    "http://google.es",
+    "http://google.es",
+    "http://google.es"
+  ],
+  "description":"Lorem Ipsum",
+  "job":"Lorem Impsum",
+  "studies":"Lorem Ipsum",
+  "song":"Lorem Ipsum",
+  "preference":"FEMALE",
+  "latitude":23.342342,
+  "longitude":54.234234,
+  "distance_min":12,
+  "distance_max":100,
+  "range_min":18,
+  "range_max":65,
+  "visibility":true
+}
