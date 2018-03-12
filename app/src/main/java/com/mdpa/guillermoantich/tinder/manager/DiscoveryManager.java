@@ -1,21 +1,9 @@
 package com.mdpa.guillermoantich.tinder.manager;
 
 import android.content.res.Resources;
-import android.util.Log;
 
-import com.mdpa.guillermoantich.tinder.R;
 import com.mdpa.guillermoantich.tinder.model.User;
 
-import org.json.JSONArray;
-import org.json.JSONObject;
-
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.io.Reader;
-import java.io.StringWriter;
-import java.io.Writer;
 import java.util.List;
 
 /**
@@ -32,10 +20,6 @@ public class DiscoveryManager {
     public DiscoveryManager() {
         //fillProfileFromFile();
         //fillUserListFromFile();
-    }
-
-    public boolean setPreferences(){
-        return true;
     }
 
     public User getProfile() {

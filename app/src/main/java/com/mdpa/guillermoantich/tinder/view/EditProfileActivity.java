@@ -19,17 +19,18 @@ import com.mdpa.guillermoantich.tinder.view.adapter.ProfileImagesAdapter;
 import com.mdpa.guillermoantich.tinder.view.model.DiscoveryViewModel;
 
 import com.mdpa.guillermoantich.tinder.R;
+import com.mdpa.guillermoantich.tinder.view.model.SettingsViewModel;
 
 public class EditProfileActivity extends AppCompatActivity {
 
-    private DiscoveryViewModel libraryViewModel;
+    private SettingsViewModel settingsViewModel;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_edit_profile);
 
-        libraryViewModel = ViewModelProviders.of(this).get(DiscoveryViewModel.class);
+        settingsViewModel = ViewModelProviders.of(this).get(SettingsViewModel.class);
         //libraryViewModel.setResources(getResources());
 
 
@@ -69,7 +70,7 @@ public class EditProfileActivity extends AppCompatActivity {
         Log.e("TEST", "indexIs= " + item.getItemId() + " And should be= " +android.R.id.home);
         switch(item.getItemId()) {
             case R.id.ic_check:
-                if(libraryViewModel.setPreferences()) {
+                if(settingsViewModel.setPreferences()) {
                     //SEND DATA TO VIEWMODEL
                     Toast.makeText(this, this.getResources().getString(R.string.edit_profile_saved), Toast.LENGTH_SHORT).show();
                     finish();

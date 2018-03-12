@@ -66,6 +66,9 @@
 
     <string name="not_available_yet">Not available yet</string>
 
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
     hint <!--
     <string name=""></string>
     <string name=""></string>
