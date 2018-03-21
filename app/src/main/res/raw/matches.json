@@ -1,0 +1,56 @@
+[
+  {
+    "sender": "Anna Lorem",
+    "image_url": "http://google.com",
+    "last_message": "Hi there",
+    "last_message_date": "17:20"
+  },
+  {
+    "sender": "John Ipsum",
+    "image_url": "http://google.com",
+    "last_message": "Hello fucker",
+    "last_message_date": "15:50"
+  },
+  {
+    "sender": "Beth Anes",
+    "image_url": "http://google.com",
+    "last_message": "Hiiiiiiii",
+    "last_message_date": "12:34"
+  },
+  {
+    "sender": "Anna Lorem",
+    "image_url": "http://google.com",
+    "last_message": "Hi there",
+    "last_message_date": "17:20"
+  },
+  {
+    "sender": "John Ipsum",
+    "image_url": "http://google.com",
+    "last_message": "Hello fucker",
+    "last_message_date": "15:50"
+  },
+  {
+    "sender": "Beth Anes",
+    "image_url": "http://google.com",
+    "last_message": "Hiiiiiiii",
+    "last_message_date": "12:34"
+  },
+  {
+    "sender": "Anna Lorem",
+    "image_url": "http://google.com",
+    "last_message": "Hi there",
+    "last_message_date": "17:20"
+  },
+  {
+    "sender": "John Ipsum",
+    "image_url": "http://google.com",
+    "last_message": "Hello fucker",
+    "last_message_date": "15:50"
+  },
+  {
+    "sender": "Beth Anes",
+    "image_url": "http://google.com",
+    "last_message": "Hiiiiiiii",
+    "last_message_date": "12:34"
+  }
+]

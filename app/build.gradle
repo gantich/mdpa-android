@@ -47,5 +47,8 @@ dependencies {
     //SeekBar
     compile 'com.crystal:crystalrangeseekbar:1.1.3'
 
+    //Gson
+    compile 'com.google.code.gson:gson:2.3.1'
+
 
 }

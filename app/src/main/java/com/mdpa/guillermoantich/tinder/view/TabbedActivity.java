@@ -4,7 +4,6 @@ import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.MenuItem;
 
@@ -34,7 +33,7 @@ public class TabbedActivity extends BaseActivity implements BottomNavigationView
                 break;
 
             case R.id.action_messaging:
-                fragment = MessagingFragment.newInstance();
+                fragment = MatchFragment.newInstance();
                 setViewPagerPosition(1);
                 break;
             case R.id.action_settings:
@@ -60,7 +59,7 @@ public class TabbedActivity extends BaseActivity implements BottomNavigationView
                 fragment = PeopleDiscoveryFragment.newInstance();
                 break;
             case 1:
-                fragment = MessagingFragment.newInstance();
+                fragment = MatchFragment.newInstance();
                 break;
             case 2:
                 fragment = SettingsFragment.newInstance();

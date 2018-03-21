@@ -4,7 +4,7 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 
-import com.mdpa.guillermoantich.tinder.view.MessagingFragment;
+import com.mdpa.guillermoantich.tinder.view.MatchFragment;
 import com.mdpa.guillermoantich.tinder.view.PeopleDiscoveryFragment;
 import com.mdpa.guillermoantich.tinder.view.SettingsFragment;
 
@@ -24,7 +24,7 @@ public class TabAdapter extends FragmentPagerAdapter {
             case 0:
                 return PeopleDiscoveryFragment.newInstance();
             case 1:
-                return MessagingFragment.newInstance();
+                return MatchFragment.newInstance();
             case 2:
                 return SettingsFragment.newInstance();
         }

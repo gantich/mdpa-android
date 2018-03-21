@@ -1,26 +1,41 @@
 package com.mdpa.guillermoantich.tinder.model;
 
+import android.support.annotation.IntDef;
+
+import java.lang.annotation.Retention;
+import java.lang.annotation.RetentionPolicy;
+
+
 /**
  * Created by master on 12/2/18.
  */
 
 public class User {
 
-    public enum Gender {
-        MALE,FEMALE,UNDEFINED;
-    }
+    @IntDef({
+            MALE,
+            FEMALE,
+            NOTDEFINED
+    })
+
+    @Retention(RetentionPolicy.SOURCE)
+    public @interface Gender {}
+
+    public final static int MALE = 0;
+    public final static int FEMALE = 1;
+    public final static int NOTDEFINED = 2;
 
     private String id;
     private String name;
     private String lastname;
     private int age;
-    private Gender gender;
+    private @Gender int gender;
     private String[] images;
     private String description;
     private String job;
     private String studies;
     private String song;
-    private Gender preference;
+    private @Gender int preference;
     private double latitude;
     private double longitude;
     private int distance_min;
@@ -30,7 +45,7 @@ public class User {
     private boolean visibility;
 
 
-    public User(String id, String name, String lastname, int age, Gender gender, String[] images, String description, String job, String studies, String song, Gender preference, double latitude, double longitude, int distance_min, int distance_max, int range_min, int range_max, boolean visibility) {
+    public User(String id, String name, String lastname, int age, @Gender int gender, String[] images, String description, String job, String studies, String song, @Gender int preference, double latitude, double longitude, int distance_min, int distance_max, int range_min, int range_max, boolean visibility) {
         this.id = id;
         this.name = name;
         this.lastname = lastname;
@@ -85,11 +100,11 @@ public class User {
         this.age = age;
     }
 
-    public Gender getGender() {
+    public @Gender int getGender() {
         return gender;
     }
 
-    public void setGender(Gender gender) {
+    public void setGender(@Gender int gender) {
         this.gender = gender;
     }
 
@@ -133,11 +148,11 @@ public class User {
         this.song = song;
     }
 
-    public Gender getPreference() {
+    public @Gender int getPreference() {
         return preference;
     }
 
-    public void setPreference(Gender preference) {
+    public void setPreference(@Gender int preference) {
         this.preference = preference;
     }
 

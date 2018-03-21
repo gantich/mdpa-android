@@ -40,6 +40,14 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".view.TabbedActivity" />
         </activity>
+        <activity
+            android:name=".view.MessageActivity"
+            android:parentActivityName=".view.TabbedActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".view.TabbedActivity" />
+        </activity>
         <activity android:name=".view.BaseActivity"></activity>
     </application>
 

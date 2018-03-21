@@ -1,0 +1,17 @@
+{
+  "origin": "Anna Lorem",
+  "messages": [
+    {
+      "sender": "Anna Lorem",
+      "message": "Hi, how are you"
+    },
+    {
+      "sender": "Me",
+      "message": "Hi, I'm fine and you"
+    },
+    {
+      "sender": "Anna Lorem",
+      "message": "Good, good"
+    }
+  ]
+}
