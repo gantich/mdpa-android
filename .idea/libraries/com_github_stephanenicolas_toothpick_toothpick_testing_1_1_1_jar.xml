@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="com.github.stephanenicolas.toothpick:toothpick-testing:1.1.1@jar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.stephanenicolas.toothpick/toothpick-testing/1.1.1/6e18c96c354f79f2b8c1dd0fffdbf5b7200aea54/toothpick-testing-1.1.1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.stephanenicolas.toothpick/toothpick-testing/1.1.1/4942948444a89ba6ea7428c6d1baf02f2b04974e/toothpick-testing-1.1.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
